@@ -38,12 +38,12 @@ class ModelPredictiveControl:
             state = self.plant_model(state,0.2,u[2*k],u[(2*k)+1])
             steering_new = u[(2*k)+1]
             pedal_new = u[(2*k)]
-            #cost = cost + (state[0]-ref[0])**2 + abs(state[1]-ref[1]) + (state[2]-ref[2])**2 
+            # cost = cost + (state[0]-ref[0])**2 + abs(state[1]-ref[1]) + (state[2]-ref[2])**2 (working_algo)
             # cost = cost + abs(state[0]-ref[0]) + abs(state[1]-ref[1]) + abs(state[2]-ref[2])
 
             # for self.reference1 = [10, 10, -1.57]
-            cost = cost + abs(state[0]-ref[0]) + abs(state[1]-ref[1]) + abs(steering_new-steering_old) + abs(state[2]-ref[2])
-            steering_old = steering_new
+            # cost = cost + abs(state[0]-ref[0]) + abs(state[1]-ref[1]) + abs(steering_new-steering_old) + abs(state[2]-ref[2])
+            # steering_old = steering_new
               
             # cost = cost + (state[0]-ref[0])**2 +  (pedal_new-pedal_old)**2 + (state[2]-ref[2])**2+ abs(steering_new-steering_old)
             # pedal_old = pedal_new
