@@ -42,9 +42,8 @@ class ModelPredictiveControl:
         #         distance = (self.x_obs-state[0])**2 + (self.y_obs-state[1])**2
         #         distance = distance**(-1)
         #         steering_new = u[(2*k)+1]
-        #         # cost = cost + (state[0]-ref[0])**2 + abs(state[1]-ref[1]) + abs(steering_new-steering_old) + abs(state[2]-ref[2])
-        #         # cost = cost + abs(state[0]-ref[0])**2 + abs(state[1]-ref[1])**2 + 100*distance**2 + abs(state[2]-ref[2])**2 + abs(steering_new-steering_old)**2
-        #         cost = cost + 8*abs(state[0]-ref[0])**2 + 8*abs(state[1]-ref[1])**2 + 100*distance**2 + 10*abs(state[2]-ref[2])**2 + abs(steering_new-steering_old)
+        #         # cost = cost + abs(state[0]-ref[0])**2 + abs(state[1]-ref[1])**2 + 50*distance**2 + 8*abs(state[2]-ref[2])**2 + abs(steering_new-steering_old)**2
+        #         cost = cost + 8*abs(state[0]-ref[0])**2 + 8*abs(state[1]-ref[1])**2 + 100*distance + 20*abs(state[2]-ref[2])**2 + abs(steering_new-steering_old)
         #         steering_old = steering_new
          
         for k in range(0,self.horizon):       # with manhattan distance
