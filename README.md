@@ -6,4 +6,4 @@ Course link: www.udemy.com/course/model-predictive-control/ \
 **assignment2**\
 ![](https://github.com/satyamgupta2708/Mpc_course/blob/master/assignment_gif/assignment2.gif)\
 **assignment3**\
-![](https://github.com/satyamgupta2708/Mpc_course/blob/master/assignment_gif/assignment3.gif)\
+![](https://github.com/satyamgupta2708/Mpc_course/blob/master/assignment_gif/assignment3.gif)
